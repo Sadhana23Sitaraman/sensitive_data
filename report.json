@@ -1,0 +1,49 @@
+{
+  "total_findings": 4,
+  "by_pattern": {
+    "EMAIL": [
+      {
+        "match": "alice@example.com",
+        "start": 12,
+        "end": 29,
+        "severity": 3,
+        "entropy": 3.337175341123077,
+        "description": "Email address",
+        "redaction": "<REDACTED_5f9fd36c9e4a>"
+      }
+    ],
+    "AWS_ACCESS_KEY_ID": [
+      {
+        "match": "AKIAABCDEFGHIJKLMNOP",
+        "start": 44,
+        "end": 64,
+        "severity": 10,
+        "entropy": 3.884183719779189,
+        "description": "AWS access key id",
+        "redaction": "<REDACTED_ba69bebcf222>"
+      }
+    ],
+    "GENERIC_API_KEY": [
+      {
+        "match": "secret = supersecretpassword123",
+        "start": 68,
+        "end": 99,
+        "severity": 9,
+        "entropy": 3.689058215261919,
+        "description": "Generic key-like token assignment (heuristic)",
+        "redaction": "<REDACTED_12d508563646>"
+      }
+    ],
+    "JWT": [
+      {
+        "match": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.abc123.signature123",
+        "start": 109,
+        "end": 165,
+        "severity": 10,
+        "entropy": 4.811382823650154,
+        "description": "JSON Web Token (header.payload.signature)",
+        "redaction": "<REDACTED_b71079080e2a>"
+      }
+    ]
+  }
+}

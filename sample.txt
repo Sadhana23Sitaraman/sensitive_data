@@ -1,0 +1,4 @@
+My email is alice@example.com
+My AWS key is AKIAABCDEFGHIJKLMNOP
+My secret = supersecretpassword123!
+My jwt: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.abc123.signature123
